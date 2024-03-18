@@ -7,4 +7,5 @@ chmod +x /bin/startxfce
 useradd -m -s /bin/bash debian
 echo "debian:debian" | chpasswd
 echo "debian  ALL=(ALL:ALL) ALL" >> /etc/sudoers.d/debian
+rm -rf .bashrc
 exit
