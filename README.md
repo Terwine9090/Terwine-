@@ -1,5 +1,5 @@
 this is debian xfce wine in android with termux-x11
 [![IMAGE](
-<b><p align="center">Easily install Full Ubuntu Desktop on Android without Root</p></b>
+<b><p align="center">Easily to install debian xfce4 in android no root</p></b>
 
-### Features
+### installation guide
