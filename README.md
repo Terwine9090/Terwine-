@@ -9,3 +9,6 @@ wget https://raw.githubusercontent.com/Terwine9090/debwine/main/Install.sh & bas
 ```
 ### how to download install
 Termux-X11 link https://raw.githubusercontent.com/olegos2/mobox/main/components/termux-x11.apk
+## how to start desktop
+~ $ termux-x11 :1 & dn
+debian@localhost:~$ startxfce
