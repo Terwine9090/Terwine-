@@ -5,5 +5,5 @@ this is debian xfce wine in android with termux-x11
 ### installation guide
 
 ```bash
-wget https://raw.githubusercontent.com/Terwine9090/debwine/main/Install.sh & bash install.sh
+wget https://raw.githubusercontent.com/Terwine9090/debwine/main/Install.sh & bash Install.sh
 ```
