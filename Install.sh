@@ -18,5 +18,5 @@ dn-r
 echo "dn -start the debian"
 echo "dn-r -start the debian root"
 echo "startxfce -to start termux-x11 desktop"
-
+echo "debian -defautl password debian"
 
