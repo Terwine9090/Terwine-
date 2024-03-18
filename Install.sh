@@ -12,7 +12,7 @@ echo "proot-distro login debian" >> $PREFIX/bin/dn-r
 chmod +x $PREFIX/bin/dn
 chmod +x $PREFIX/bin/dn-r
 cd $PREFIX/var/lib/proot-distro/installed-rootfs/debian/root
-wget https://raw.githubusercontent.com/Terwine9090/Terwine/main/Xfce4.sh
+wget https://raw.githubusercontent.com/Terwine9090/debwine/main/Xfce4.sh
 echo "bash Xfce4.sh" >> .bashrc
 dn-r
 echo "dn -start the debian"
