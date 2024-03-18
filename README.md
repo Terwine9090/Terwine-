@@ -8,6 +8,4 @@ this is debian xfce wine in android with termux-x11
 wget https://raw.githubusercontent.com/Terwine9090/debwine/main/Install.sh & bash Install.sh
 ```
 ### how to install and start termux-x11 
-```bash
-[Termux-X11](https://raw.githubusercontent.com/olegos2/mobox/main/components/termux-x11.apk.
-```
+[Termux-X11](https://raw.githubusercontent.com/olegos2/mobox/main/components/termux-x11.ap
