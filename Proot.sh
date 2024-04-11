@@ -5,6 +5,7 @@ cmdline="proot \
         -0 \
         -r ubuntu \
         -b /dev \
+        -b $PREFIX/tmp:tmp \
         -b /sdacrd \
         -b /proc \
         -b ubuntu/root:/dev/shm \
