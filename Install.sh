@@ -23,13 +23,9 @@ bash Proot.sh tar -xvf wine-8.14.tar.gz
 bash Proot.sh mv wine-8.14 wine64
 echo '#!/bin/bash
 export WINEPREFIX=~/.wine64
-box64 '"/root/wine64/bin/wine "'"$@"' > $HOME/ubuntu/usr/local/bin/wine64
-chmod +x $HOME/ubuntu/usr/local/bin/wine64
-echo "GALIUM_DRIVER=virpipe wine64 explorer /desktop=shell,1280x720 explorer" >> $HOME/ubuntu/usr/local/bin/wine64-desktop
-chmod +x $HOME/ubuntu/usr/local/bin/wine64-desktop
-echo "#/bin/bash
-cd $HOME
-termux-x11 &
-bash Proot.sh wine64-desktop" >> $PREFIX/bin/wine
-chmod +x $PREFIX/bin/wine
-
+box64 '"/root/wine64/bin/wine "'"$@"' > $HOME/ubuntu/usr/local/bin/wine
+chmod +x $HOME/ubuntu/usr/local/bin/wine
+apt install proot-distro -y
+mv ubuntu $PREFIX/var/lib/proot-distro/installed-rootfs
+echo "pd login ubuntu --shared-tmp" >> $PREFIX/bin/ubuntu
+chmod +x $PREFIX/bin/ubuntu
