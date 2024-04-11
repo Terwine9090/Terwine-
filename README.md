@@ -9,3 +9,4 @@ box64 + wine install in termux
 curl https://raw.githubusercontent.com/Terwine9090/ubuntu-wine/main/Install.sh >> install.sh && bash install.sh
 ```
 open termux paste the command and enter
+this project using [box64](https://github.com/ptitSeb/box64) and [wine](https://www.winehq.org/)
