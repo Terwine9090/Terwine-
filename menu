@@ -1,3 +1,6 @@
+export DISPLAY=:0
+export BOX64_PATH=~/wine64/bin/
+export BOX64_LD_LIBRARY_PATH=~/wine64/lib/i386-unix/:~/wine64/lib/wine/x86_64-unix/:/lib/i386-linux-gnu/:/lib/x86_64-linux-gnu:/lib/aarch64-linux-gnu/:/lib/arm-linux-gnuea
 echo "[1]box64 wine64 start"
 echo "[2]terminal mode"
 read -p ":" select
