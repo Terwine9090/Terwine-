@@ -6,4 +6,5 @@ wget https://github.com/Terwine9090/ubuntu-wine/releases/download/v1.0.0/rootfs.
 echo "extract rootfs"
 tar -xf rootfs.tar.xz
 echo "download wine"
-wget 
+wget https://raw.githubusercontent.com/Terwine9090/ubuntu-wine/main/Proot.sh
+rm -rf ubuntu/root/.bashrc
