@@ -1,3 +1,4 @@
+virgl_test_server_android &
 unset LD_PRELOAD
 cmdline="proot \
         --link2symlink \
