@@ -5,8 +5,8 @@ cmdline="proot \
         -0 \
         -r ubuntu \
         -b /dev \
-        -b $PREFIX/tmp:/tmp \
-        -b /sdacrd \
+        -b /data/data/com.termux/files/usr/tmp:/tmp \
+        -b /storage \
         -b /proc \
         -b ubuntu/root:/dev/shm \
         -w /root \
