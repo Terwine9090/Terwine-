@@ -13,4 +13,9 @@ cmdline="proot \
            TERM=$TERM \
            LANG=C.UTF-8 \
            bash"
-$cmdline
+cmd="$@"
+if [ "$#" == "0" ];then
+    exec $cmdline
+else
+    $cmdline -c "$cmd"
+fi
