@@ -9,11 +9,10 @@ if (( $select == "1" ));
             wine explorer /desktop=shell,1280x720 explorer
         elif (( $select == "2" ));
         then
-            echo 
+            echo
         elif (( $wimg == "3" ));
         then
             wimg="nano"
         else
-            wimg="full
-
- fi
+            wimg="full"
+        fi
