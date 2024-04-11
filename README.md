@@ -5,10 +5,9 @@ box64 + wine install in termux
 ### installation guide
 
 ```bash
-wget https://raw.githubusercontent.com/Terwine9090/debwine/main/Install.sh & bash Install.sh
+curl https://raw.githubusercontent.com/Terwine9090/ubuntu-wine/main/Install.sh >> install.sh && bash install.sh
 ```
 ### how to download install
 Termux-X11 link https://raw.githubusercontent.com/olegos2/mobox/main/components/termux-x11.apk
-## how to start desktop
-~ $ termux-x11 :1 & dn
-debian@localhost:~$ startxfce
+## how to start wine
+-$ wine
