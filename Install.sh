@@ -26,6 +26,7 @@ box64 '"/root/wine64/bin/wine "'"$@"' > $HOME/ubuntu/usr/local/bin/wine64
 chmod +x $HOME/root/usr/local/bin/wine64
 echo "#/bin/bash
 cd $HOME
-bash Proot.sh wine explorer /desktop=shell,1280x720" >> $PREFIX/bin/wine
+termux-x11 &
+bash Proot.sh wine64 explorer /desktop=shell,1280x720 explorer" >> $PREFIX/bin/wine
 chmod +x $PREFIX/bin/wine
 echo "start wine to type wine and enter"
