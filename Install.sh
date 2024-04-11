@@ -24,10 +24,12 @@ bash Proot.sh mv wine-8.14 wine64
 echo '#!/bin/bash
 export WINEPREFIX=~/.wine64
 box64 '"/root/wine64/bin/wine "'"$@"' > $HOME/ubuntu/usr/local/bin/wine64
-chmod +x $HOME/root/usr/local/bin/wine64
+chmod +x $HOME/ubuntu/usr/local/bin/wine64
+echo "GALIUM_DRIVER=virpipe wine64 explorer /desktop=shell,1280x720 explorer" >> $HOME/ubuntu/usr/local/bin/wine64-desktop
+chmod +x $HOME/ubuntu/usr/local/bin/wine64-desktop
 echo "#/bin/bash
 cd $HOME
 termux-x11 &
-bash Proot.sh wine64 explorer /desktop=shell,1280x720 explorer" >> $PREFIX/bin/wine
+bash Proot.sh wine64-desktop" >> $PREFIX/bin/wine
 chmod +x $PREFIX/bin/wine
-echo "start wine to type wine and enter"
+
