@@ -1,0 +1,15 @@
+echo "[1]box64 wine64 start"
+echo "[2]terminal mode"
+read -p ":" select
+if (( $select == "1" ));
+        then
+            wine explorer /desktop=shell,1280x720 explorer
+        elif (( $select == "2" ));
+        then
+            echo 
+        elif (( $wimg == "3" ));
+        then
+            wimg="nano"
+        else
+            wimg="full"
+        fi
