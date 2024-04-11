@@ -9,6 +9,6 @@ curl https://raw.githubusercontent.com/Terwine9090/ubuntu-wine/main/Install.sh >
 ```
 copy to termux and enter
 ### how to download install
-Termux-X11 link https://raw.githubusercontent.com/olegos2/mobox/main/components/termux-x11.apk
+[termux-x11](https://raw.githubusercontent.com/olegos2/mobox/main/components/termux-x11.apk)
 ## how to start wine
 -$ wine
