@@ -28,7 +28,7 @@ mkdir installed-rootfs
 cd installed-rootfs
 cd
 mv ubuntu $PREFIX/var/lib/proot-distro/installed-rootfs
-echo "pd login ubuntu --shared-tmp" >> $PREFIX/bin/ubuntu
+echo "virgl_test_server_android & pd login ubuntu --shared-tmp" >> $PREFIX/bin/ubuntu
 chmod +x $PREFIX/bin/ubuntu
 wget https://raw.githubusercontent.com/Terwine9090/ubuntu-wine/main/menu
 rm -rf $PREFIX/var/lib/proot-distro/installed-rootfs/ubuntu/root/.bashrc
