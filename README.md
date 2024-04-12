@@ -38,5 +38,11 @@ go to termux-x11
 
 
 
-[![IMAGE](https://github.com/Terwine9090/ubuntu-wine/blob/main/Screenshot_2024-04-12-08-54-43-95_00df01c412509efb9bd6450c382822af.jpg)
+[![IMAGE](https://github.com/Terwine9090/ubuntu-wine/blob/main/Screenshot_2024-04-12-08-54-43-95_00df01c412509efb9bd6450c382822af.jpg)]
+
+
+
+
+pls wait few minutes
+
 
