@@ -46,3 +46,11 @@ go to termux-x11
 pls wait few minutes
 
 
+
+
+[![IMAGE](https://github.com/Terwine9090/ubuntu-wine/blob/main/Screenshot_2024-04-12-09-11-31-13_00df01c412509efb9bd6450c382822af.jpg)
+
+
+
+
+you are .exe file run 
