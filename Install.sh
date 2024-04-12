@@ -33,3 +33,6 @@ chmod +x $PREFIX/bin/ubuntu
 wget https://raw.githubusercontent.com/Terwine9090/ubuntu-wine/main/menu
 rm -rf $PREFIX/var/lib/proot-distro/installed-rootfs/ubuntu/root/.bashrc
 mv menu $PREFIX/var/lib/proot-distro/installed-rootfs/ubuntu/root/.bashrc
+cd
+echo "pulseaudio --start --exit-idle-time=-1
+pacmd load-module module-native-protocol-tcp auth-ip-acl=127.0.0.1 auth-anonymous=1" >> .bashrc
