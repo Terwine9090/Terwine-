@@ -21,6 +21,12 @@ export WINEPREFIX=~/.wine64
 box64 '"/root/wine64/bin/wine "'"$@"' > $HOME/ubuntu/usr/local/bin/wine
 chmod +x $HOME/ubuntu/usr/local/bin/wine
 apt install proot-distro -y
+cd $PREFIX/var/lib
+mkdir proot-distro 
+cd proot-distro 
+mkdir installed-rootfs
+cd installed-rootfs
+cd
 mv ubuntu $PREFIX/var/lib/proot-distro/installed-rootfs
 echo "pd login ubuntu --shared-tmp" >> $PREFIX/bin/ubuntu
 chmod +x $PREFIX/bin/ubuntu
