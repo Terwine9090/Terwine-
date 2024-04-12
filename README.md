@@ -17,6 +17,14 @@ go to termux and type
 termux-x11 & ubuntu
 ```
 enter
+
+
 [![IMAGE](https://github.com/Terwine9090/ubuntu-wine/blob/main/Screenshot_2024-04-12-09-37-13-03_84d3000e3f4017145260f7618db1d683.jpg)]
+
 type 1 and enter
+
+
+
+
+
 [![IMAGE](https://github.com/Terwine9090/ubuntu-wine/blob/main/Screenshot_2024-04-12-09-37-46-78_84d3000e3f4017145260f7618db1d683.jpg)]
