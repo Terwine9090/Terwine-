@@ -4,6 +4,7 @@ apt install wget proot -y
 apt install x11-repo
 apt install termux-x11-nightly -y
 apt install virglrenderer-android -y
+apt install pulseaudio -y 
 echo "download rootfs"
 wget https://github.com/Terwine9090/ubuntu-wine/releases/download/v1.0.0/rootfs.tar.xz
 echo "extract rootfs"
