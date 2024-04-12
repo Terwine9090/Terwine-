@@ -11,3 +11,9 @@ curl https://raw.githubusercontent.com/Terwine9090/ubuntu-wine/main/Install.sh >
 open termux paste the command and enter
 ## information 
 this project using [box64](https://github.com/ptitSeb/box64) and [wine](https://www.winehq.org/)
+## how to start wine with termux-x11
+go to termux and type 
+```bash
+termux-x11 & ubuntu
+```
+enter
