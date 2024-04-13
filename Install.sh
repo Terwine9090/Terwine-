@@ -24,6 +24,7 @@ chmod +x $HOME/ubuntu/usr/local/bin/wine
 cd ubuntu/root
 wget https://raw.githubusercontent.com/Terwine9090/ubuntu-wine/main/Wine-installer.sh
 termux-x11 &
+cd
 bash Proot.sh wine-installer.sh
 wget https://raw.githubusercontent.com/Terwine9090/ubuntu-wine/main/menu
 rm -rf ubuntu/root/.bashrc
