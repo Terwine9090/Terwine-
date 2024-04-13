@@ -6,7 +6,7 @@ apt install termux-x11-nightly -y
 apt install virglrenderer-android -y
 apt install pulseaudio -y 
 echo "download rootfs"
-wget https://github.com/Terwine9090/ubuntu-wine/releases/download/v1.0.0/rootfs.tar.xz
+wget https://github.com/Terwine9090/ubuntu-wine/releases/download/v1.0.0/rootfs.tar.xz 
 echo "extract rootfs"
 tar -xf rootfs.tar.xz
 echo "download wine"
@@ -21,19 +21,14 @@ echo '#!/bin/bash
 export WINEPREFIX=~/.wine64
 box64 '"/root/wine64/bin/wine "'"$@"' > $HOME/ubuntu/usr/local/bin/wine
 chmod +x $HOME/ubuntu/usr/local/bin/wine
-apt install proot-distro -y
-cd $PREFIX/var/lib
-mkdir proot-distro 
-cd proot-distro 
-mkdir installed-rootfs
-cd installed-rootfs
-cd
-mv ubuntu $PREFIX/var/lib/proot-distro/installed-rootfs
 echo "virgl_test_server_android & pd login ubuntu --shared-tmp" >> $PREFIX/bin/ubuntu
 chmod +x $PREFIX/bin/ubuntu
 wget https://raw.githubusercontent.com/Terwine9090/ubuntu-wine/main/menu
-rm -rf $PREFIX/var/lib/proot-distro/installed-rootfs/ubuntu/root/.bashrc
-mv menu $PREFIX/var/lib/proot-distro/installed-rootfs/ubuntu/root/.bashrc
+rm -rf ubuntu/root/.bashrc
+mv menu ubuntu/root/.bashrc
+echo "bash Proot.sh" >> $PREFIX/bin/ubuntu
+chmod +x $PREFIX/bin/ubuntu
 cd
 echo "pulseaudio --start --exit-idle-time=-1
 pacmd load-module module-native-protocol-tcp auth-ip-acl=127.0.0.1 auth-anonymous=1" >> .bashrc
+
