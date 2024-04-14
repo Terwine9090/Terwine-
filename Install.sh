@@ -25,7 +25,7 @@ cd ubuntu/root
 wget https://raw.githubusercontent.com/Terwine9090/ubuntu-wine/main/Wine-installer.sh
 termux-x11 &
 cd
-bash Proot.sh wine-installer.sh
+bash Proot.sh bash wine-installer.sh
 wget https://raw.githubusercontent.com/Terwine9090/ubuntu-wine/main/menu
 rm -rf ubuntu/root/.bashrc
 mv menu ubuntu/root/.bashrc
