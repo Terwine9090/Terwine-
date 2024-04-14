@@ -6,6 +6,7 @@ cmdline="proot \
         -r ubuntu \
         -b /dev \
         -b $PREFIX/tmp:/tmp \
+        -b /sdcard \
         -b /proc \
         -b ubuntu/root:/dev/shm \
         -w /root \
