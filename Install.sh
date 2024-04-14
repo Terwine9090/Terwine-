@@ -25,7 +25,7 @@ cd ubuntu/root
 wget https://raw.githubusercontent.com/Terwine9090/ubuntu-wine/main/Wine-installer.sh
 termux-x11 &
 cd
-bash Proot.sh bash wine-installer.sh
+bash Proot.sh bash Wine-installer.sh
 wget https://raw.githubusercontent.com/Terwine9090/ubuntu-wine/main/menu
 rm -rf ubuntu/root/.bashrc
 mv menu ubuntu/root/.bashrc
@@ -34,3 +34,4 @@ chmod +x $PREFIX/bin/ubuntu
 cd
 echo "pulseaudio --start --exit-idle-time=-1
 pacmd load-module module-native-protocol-tcp auth-ip-acl=127.0.0.1 auth-anonymous=1" >> .bashrc
+
