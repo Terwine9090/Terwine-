@@ -4,6 +4,7 @@ export BOX64_LD_LIBRARY_PATH=~/wine64/lib/i386-unix/:~/wine64/lib/wine/x86_64-un
 wine wineboot -u
 wget https://github.com/doitsujin/dxvk/releases/download/v2.1/dxvk-2.1.tar.gz
 tar -xvf dxvk-2.1.tar.gz
+cd dxvk-2.1
 cp x32/* ~/.wine64/drive_c/windows/system32
 cp x64/* ~/.wine64/drive_c/windows/syswow64
-exit
+
