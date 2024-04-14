@@ -11,6 +11,7 @@ read -p ":" select
 if (( $select == "1" ));
         then
             wine explorer /desktop=shell,1280x720 explorer
+            source ~/.bashrc
         elif (( $select == "2" ));
         then
             echo 
@@ -18,6 +19,11 @@ if (( $select == "1" ));
         then
             DXVK_HUD=1
             DXVK_HUD=devinfo,fps
+            source ~/.bashrc
         else
             wimg="full"
         fi
+
+
+
+exit
