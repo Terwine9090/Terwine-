@@ -1,3 +1,4 @@
+termux-setup-storage
 apt update
 apt upgrade -y
 apt install wget proot -y
