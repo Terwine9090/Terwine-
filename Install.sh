@@ -30,9 +30,11 @@ bash Proot.sh bash Wine-installer.sh
 wget https://raw.githubusercontent.com/Terwine9090/ubuntu-wine/main/menu
 rm -rf ubuntu/root/.bashrc
 mv menu ubuntu/root/.bashrc
-echo "bash Proot.sh" >> $PREFIX/bin/ubuntu
-chmod +x $PREFIX/bin/ubuntu
+echo "bash winedroid.sh" >> $PREFIX/bin/winedroid
+chmod +x $PREFIX/bin/winedroid
+rm -rf Proot.sh
 cd
 echo "pulseaudio --start --exit-idle-time=-1
 pacmd load-module module-native-protocol-tcp auth-ip-acl=127.0.0.1 auth-anonymous=1" >> .bashrc
+echo " to start winedroid to type winedroid"
 
