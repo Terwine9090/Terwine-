@@ -14,19 +14,14 @@ echo "download wine"
 wget https://raw.githubusercontent.com/Terwine9090/ubuntu-wine/main/Proot.sh
 rm -rf ubuntu/root/.bashrc
 cd ubuntu/root
-wget https://github.com/Pi-Apps-Coders/files/releases/download/large-files/wine-8.14.tar.gz
+wget https://github.com/Pi-Apps-Coders/files/releases/download/large-files/wine-9.3.tar.gz
 cd
-bash Proot.sh tar -xvf wine-8.14.tar.gz
-bash Proot.sh mv wine-8.14 wine64
+bash Proot.sh tar -xvf wine-9.3.tar.gz
+bash Proot.sh mv wine-9.3 wine64
 echo '#!/bin/bash
 export WINEPREFIX=~/.wine64
 box64 '"/root/wine64/bin/wine "'"$@"' > $HOME/ubuntu/usr/local/bin/wine
 chmod +x $HOME/ubuntu/usr/local/bin/wine
-cd ubuntu/root
-wget https://raw.githubusercontent.com/Terwine9090/ubuntu-wine/main/Wine-installer.sh
-termux-x11 &
-cd
-bash Proot.sh bash Wine-installer.sh
 wget https://raw.githubusercontent.com/Terwine9090/ubuntu-wine/main/menu
 rm -rf ubuntu/root/.bashrc
 mv menu ubuntu/root/.bashrc
