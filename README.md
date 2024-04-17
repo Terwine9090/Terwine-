@@ -1,6 +1,6 @@
-box64 + wine install in termux
 
-<b><p align="center">Easily to install box64 wine in termux 
+
+winedroid is x64_86 run winedows app in android
 ### how to download install
 [termux-x11](https://raw.githubusercontent.com/olegos2/mobox/main/components/termux-x11.apk)and
 [termux](https://f-droid.org/repo/com.termux_118.apk)
@@ -14,43 +14,10 @@ this project using [box64](https://github.com/ptitSeb/box64) , [wine](https://ww
 ## how to start wine with termux-x11
 go to termux and type 
 ```bash
-termux-x11 & ubuntu
+winedroid
 ```
 enter
 
 
-[![IMAGE](https://github.com/Terwine9090/ubuntu-wine/blob/main/Screenshot_2024-04-12-09-37-13-03_84d3000e3f4017145260f7618db1d683.jpg)]
-
-type 1 and enter
 
 
-
-
-
-[![IMAGE](https://github.com/Terwine9090/ubuntu-wine/blob/main/Screenshot_2024-04-12-09-37-46-78_84d3000e3f4017145260f7618db1d683.jpg)]
-
-
-
-
-
-go to termux-x11
-
-
-
-
-[![IMAGE](https://github.com/Terwine9090/ubuntu-wine/blob/main/Screenshot_2024-04-12-08-54-43-95_00df01c412509efb9bd6450c382822af.jpg)]
-
-
-
-
-pls wait few minutes
-
-
-
-
-[![IMAGE](https://github.com/Terwine9090/ubuntu-wine/blob/main/Screenshot_2024-04-12-09-11-31-13_00df01c412509efb9bd6450c382822af.jpg)
-
-
-
-
-you are .exe file run 
