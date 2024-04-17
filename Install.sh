@@ -30,7 +30,7 @@ bash Proot.sh bash Wine-installer.sh
 wget https://raw.githubusercontent.com/Terwine9090/ubuntu-wine/main/menu
 rm -rf ubuntu/root/.bashrc
 mv menu ubuntu/root/.bashrc
-echo "termux-x11 &> /dev/null & bash winedroid.sh" >> $PREFIX/bin/winedroid
+echo "termux-x11 &> /dev/null & bash windroid.sh" >> $PREFIX/bin/winedroid
 chmod +x $PREFIX/bin/winedroid
 rm -rf Proot.sh
 wget https://raw.githubusercontent.com/Terwine9090/ubuntu-wine/main/windroid.sh
