@@ -11,12 +11,7 @@ curl https://raw.githubusercontent.com/Terwine9090/ubuntu-wine/main/Install.sh >
 open termux paste the command and enter
 ## information 
 this project using [box64](https://github.com/ptitSeb/box64) , [wine](https://www.winehq.org/) and [dxvk](https://github.com/doitsujin/dxvk)
-## how to start wine with termux-x11
-go to termux and type 
-```bash
-winedroid
-```
-enter
+## how to install dxvk
 
 
 
