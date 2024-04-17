@@ -12,7 +12,8 @@ open termux paste the command and enter
 ## information 
 this project using [box64](https://github.com/ptitSeb/box64) , [wine](https://www.winehq.org/) and [dxvk](https://github.com/doitsujin/dxvk)
 ## how to install dxvk
-
-
+```bash
+curl https://raw.githubusercontent.com/Terwine9090/ubuntu-wine/main/Wine-installer.sh && bash Wine-installer.sh
+```
 
 
