@@ -1,6 +1,6 @@
 
 
-winedroid is x64_86 run winedows app in android
+winedroid is a emulator x64_86 run winedows app in android
 ### how to download install
 [termux-x11](https://raw.githubusercontent.com/olegos2/mobox/main/components/termux-x11.apk)and
 [termux](https://f-droid.org/repo/com.termux_118.apk)
@@ -11,9 +11,12 @@ curl https://raw.githubusercontent.com/Terwine9090/ubuntu-wine/main/Install.sh >
 open termux paste the command and enter
 ## information 
 this project using [box64](https://github.com/ptitSeb/box64) , [wine](https://www.winehq.org/) and [dxvk](https://github.com/doitsujin/dxvk)
-## how to install dxvk
-```bash
-curl https://raw.githubusercontent.com/Terwine9090/ubuntu-wine/main/Wine-installer.sh >> Wine-installer.sh && bash Wine-installer.sh
-```
-
-
+## system requirements
+4GB + ram 
+hello g85 + and snapdragon 999 +
+64bit android 
+storage 6gb +
+## root is requirements
+no root is not snapdragon
+## f
+is emulator installed virgl dxvk vuikan
