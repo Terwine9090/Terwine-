@@ -9,7 +9,7 @@ echo "1.10.2"
 echo "1.10.1"
 read -p ":" version
 wine wineboot
-wget https://github.com/doitsujin/dxvk/releases/download/v2.1/dxvk-${version}.tar.gz
+wget https://github.com/doitsujin/dxvk/releases/download/v${version}/dxvk-${version}.tar.gz
 tar -xvf dxvk-${version}.tar.gz
 cd dxvk-${version}
 cp x32/* ~/.wine64/drive_c/windows/system32
