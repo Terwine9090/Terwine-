@@ -17,7 +17,7 @@ if (( $select == "1" ));
             echo 
         elif (( $select == "3" ));
         then
-           exit
+           curl https://raw.githubusercontent.com/Terwine9090/ubuntu-wine/main/Wine-installer.sh >> Wine-installer.sh && bash Wine-installer.sh
         else
             exit
         fi
