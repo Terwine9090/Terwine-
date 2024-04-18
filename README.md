@@ -17,6 +17,6 @@ hello g85 + and snapdragon 999 +
 64bit android 
 storage 6gb +
 ## root is requirements
-no root is not snapdragon
+no root is not requirements
 ## f
 is emulator installed virgl dxvk vuikan
