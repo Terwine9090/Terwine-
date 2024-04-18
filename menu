@@ -7,6 +7,7 @@ echo "winedroid is start"
 echo "[1]box64 wine64 start"
 echo "[2]terminal mode"
 echo "[3] install dxvk"
+if 
 read -p ":" select
 if (( $select == "1" ));
         then
