@@ -8,7 +8,9 @@ clear
 echo "winedroid is start"
 echo "[1]box64 wine64 start"
 echo "[2]terminal mode"
+if [ -e .wine64 ]; then                                                          
 echo "[3] install dxvk"
+fi
 read -p ":" select
 if (( $select == "1" ));
         then
@@ -19,8 +21,8 @@ if (( $select == "1" ));
             echo 
         elif (( $select == "3" ));
         then
-           
-
+           wget https://raw.githubusercontent.com/Terwine9090/ubuntu-wine/main/Wine-installer.sh && bash Wine-installer.sh
+           exit
         else
             exit
         fi
