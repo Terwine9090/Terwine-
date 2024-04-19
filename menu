@@ -21,7 +21,8 @@ if (( $select == "1" ));
             echo 
         elif (( $select == "3" ));
         then
-           
+           wine wineboot
+           wget https://raw.githubusercontent.com/Terwine9090/ubuntu-wine/main/Wine-installer.sh && bash Wine-installer.sh
            exit
         else
             exit
