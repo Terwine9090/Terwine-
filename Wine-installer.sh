@@ -8,8 +8,6 @@ echo "1.10.3"
 echo "1.10.2"
 echo "1.10.1"
 read -p ":" version
-rm -rf .wine64
-wine wineboot
 wget https://github.com/doitsujin/dxvk/releases/download/v${version}/dxvk-${version}.tar.gz
 tar -xvf dxvk-${version}.tar.gz
 cd dxvk-${version}
