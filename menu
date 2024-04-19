@@ -1,4 +1,6 @@
 export BOX64_LOG=1
+export BOX64_NOBANNER=1
+export WINEDEBUG=-all
 export PULSE_SERVER=127.0.0.1
 export DISPLAY=:0
 export BOX64_PATH=~/wine64/bin/
