@@ -33,7 +33,7 @@ if (( $select == "1" ));
             
         elif (( $select == "3" ));
         then
-             
+           wget https://raw.githubusercontent.com/Terwine9090/ubuntu-wine/main/Wine-installer.sh && bash Wine-installer.sh
           fi
         else
             exit
