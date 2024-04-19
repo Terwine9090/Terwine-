@@ -1,15 +1,14 @@
-DXVK_HUD=1
-DXVK_HUD=devinfo,fps
+
 export PULSE_SERVER=127.0.0.1
 export DISPLAY=:0
 export BOX64_PATH=~/wine64/bin/
 export BOX64_LD_LIBRARY_PATH=~/wine64/lib/i386-unix/:~/wine64/lib/wine/x86_64-unix/:/lib/i386-linux-gnu/:/lib/x86_64-linux-gnu:/lib/aarch64-linux-gnu/:/lib/arm-linux-gnueabihf/:/usr/lib/aarch64-linux-gnu/:/usr/lib/arm-linux-gnueabihf/:/usr/lib/i386-linux-gnu/:/usr/lib/x86_64-linux-gnu
 clear
+
 echo "winedroid is start"
 echo "[1]box64 wine64 start"
 echo "[2]terminal mode"
-echo "[3] install dxvk"
-
+echo "[3] more settings"
 read -p ":" select
 if (( $select == "1" ));
         then
@@ -20,7 +19,22 @@ if (( $select == "1" ));
             echo 
         elif (( $select == "3" ));
         then
-           wget https://raw.githubusercontent.com/Terwine9090/ubuntu-wine/main/Wine-installer.sh >> Wine-installer.sh && bash Wine-installer.sh
+           echo "[1]wine reset and configuration"
+           echo "[2]core"
+           if [ -e .wine64 ]; then
+              echo "[3] dxvk install"
+                fi
+             if (( $select == "1" ));
+        then
+            wine wineboot
+            source ~/.bashrc
+        elif (( $select == "2" ));
+        then
+            
+        elif (( $select == "3" ));
+        then
+             
+          fi
         else
             exit
         fi
