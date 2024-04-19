@@ -6,7 +6,7 @@ if (( $setting == "1" ));
         then
             read -p ":" core
             rm -rf /opt/core.sh
-            echo "export core=$core" >> /opt/res.sh
+            echo "export core=$core" >> /opt/core.sh
         elif (( $setting == "2" ));
         then
             read -p ":" res
