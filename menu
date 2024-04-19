@@ -9,19 +9,19 @@ clear
 echo "winedroid is start"
 echo "[1]box64 wine64 start"
 echo "[2]terminal mode"                                                   
-echo "[3] more"
+echo "[3] install dxvk"
 
 read -p ":" select
 if (( $select == "1" ));
         then
-           taskset -c $core wine explorer /desktop=shell,$res explorer
+           wine explorer /desktop=shell,1280x720
             source ~/.bashrc
         elif (( $select == "2" ));
         then
             echo 
         elif (( $select == "3" ));
         then
-           bash /opt/settings.sh
+           
            exit
         else
             exit
