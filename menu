@@ -1,5 +1,5 @@
-bash res.sh
-bash core.sh
+bash /opt/res.sh
+bash /opt/core.sh
 export PULSE_SERVER=127.0.0.1
 export DISPLAY=:0
 export BOX64_PATH=~/wine64/bin/
@@ -14,7 +14,7 @@ echo "[3] more"
 read -p ":" select
 if (( $select == "1" ));
         then
-            wine explorer /desktop=shell,1280x720 explorer
+           taskset -c $core wine explorer /desktop=shell,$res explorer
             source ~/.bashrc
         elif (( $select == "2" ));
         then
