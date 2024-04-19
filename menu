@@ -1,4 +1,5 @@
-
+bash res.sh
+bash core.sh
 export PULSE_SERVER=127.0.0.1
 export DISPLAY=:0
 export BOX64_PATH=~/wine64/bin/
@@ -7,10 +8,9 @@ clear
 
 echo "winedroid is start"
 echo "[1]box64 wine64 start"
-echo "[2]terminal mode"
-if [ -e .wine64 ]; then                                                          
-echo "[3] install dxvk"
-fi
+echo "[2]terminal mode"                                                   
+echo "[3] more"
+
 read -p ":" select
 if (( $select == "1" ));
         then
