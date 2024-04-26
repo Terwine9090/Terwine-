@@ -10,8 +10,6 @@ cd /root
 echo "winedroid is start"
 echo "[1]box64 wine64 start"
 echo "[2]terminal mode"                                                   
-echo "[3] change resolution"
-echo "[4] change core"
 read -p ":" select
 case $select in
 1)
@@ -20,24 +18,6 @@ case $select in
 ;;
 2)
  echo "terminal mode"
-;;
-3)
- rm -rf ~/.bashrc
- echo "type resolution"
- read -p ":" res
- echo "export res=$res" >> ~/.bashrc
- echo "export core=$core" >> ~/.bashrc
- echo "bash /opt/menu" >> ~/.bashrc
- source ~/.bashrc
-;;
-4)
- rm -rf ~/.bashrc
- echo "type -7"
- read -p ":" core
- echo "export res=$res" >> ~/.bashrc
- echo "export core=$core" >> ~/.bashrc
- echo "bash /opt/menu" >> ~/.bashrc
- source ~/.bashrc
 ;;
 esac
 
