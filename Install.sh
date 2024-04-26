@@ -46,6 +46,7 @@ cd
 termux-x11 &> /dev/null &
 cd $HOME/ubuntu/root
 wget https://raw.githubusercontent.com/Terwine9090/ubuntu-wine/main/wine-util
+cd
 bash Proot.sh bash wine-util 
 rm -rf Proot.sh
 wget https://raw.githubusercontent.com/Terwine9090/ubuntu-wine/main/windroid.sh
