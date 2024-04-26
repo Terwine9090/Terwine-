@@ -5,3 +5,8 @@ wget https://dl.winehq.org/wine/wine-mono/9.0.0/wine-mono-9.0.0-x86.tar.xz
 apt install xz-utils -y
 tar -xvf wine-mono-9.0.0-x86.tar.xz -C /opt/wine/share/wine/mono
 wine wineboot
+wget https://github.com/doitsujin/dxvk/releases/download/v2.3.1/dxvk-2.3.1.tar.gz 
+tar -xvf dxvk-2.3.1.tar.gz
+cd dxvk-2.3.1
+cp x32/* ~/.wine64/drive_c/windows/system32
+cp x64/* ~/.wine64/drive_c/windows/syswow64
