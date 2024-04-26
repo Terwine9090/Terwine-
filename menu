@@ -13,7 +13,7 @@ echo "[2]terminal mode"
 read -p ":" select
 case $select in
 1)
- wine /desktop=shell,1280x720 explorer &>/dev/null &
+ wine explorer /desktop=shell,1280x720 explorer &>/dev/null &
  bash /opt/wine-stop
 ;;
 2)
