@@ -46,7 +46,8 @@ cd
 bash Proot.sh bash wine-util 
 rm -rf Proot.sh
 wget https://raw.githubusercontent.com/Terwine9090/ubuntu-wine/main/windroid.sh
-wget 
+wget https://raw.githubusercontent.com/Terwine9090/ubuntu-wine/main/menu
+mv menu ubuntu/root/.bashrc
 echo "pulseaudio --start --exit-idle-time=-1
 pacmd load-module module-native-protocol-tcp auth-ip-acl=127.0.0.1 auth-anonymous=1" >> .bashrc
 echo " to start winedroid to type winedroid"
