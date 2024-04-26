@@ -1,6 +1,9 @@
+echo "click to allow"
 termux-setup-storage
+echo "update and upgrade"
 apt update
 apt upgrade -y
+echo "install package"
 apt install wget proot -y
 apt install x11-repo
 apt install termux-x11-nightly -y
@@ -10,18 +13,22 @@ echo "download rootfs"
 wget https://github.com/Terwine9090/ubuntu-wine/releases/download/v1.0.0/rootfs.tar.xz
 echo "extract rootfs"
 tar -xf rootfs.tar.xz
-echo "download wine"
 wget https://raw.githubusercontent.com/Terwine9090/ubuntu-wine/main/Proot.sh
 rm -rf ubuntu/root/.bashrc
-cd ubuntu/root
+cd ubuntu/opt
+echo "download wine"
 wget https://github.com/Pi-Apps-Coders/files/releases/download/large-files/wine-9.3.tar.gz
+tar -xf wine-9.3.tar.gz
+mv wine-9.3 wine
 cd
-bash Proot.sh tar -xvf wine-9.3.tar.gz
-bash Proot.sh mv wine-9.3 wine64
 echo '#!/bin/bash
 export WINEPREFIX=~/.wine64
-box64 '"/root/wine64/bin/wine "'"$@"' > $HOME/ubuntu/usr/local/bin/wine
+box64 '"/opt/wine/bin/wine "'"$@"' > $HOME/ubuntu/usr/local/bin/wine
 chmod +x $HOME/ubuntu/usr/local/bin/wine
+echo '#!/bin/bash
+export WINEPREFIX=~/.wine64
+box64 '"/opt/wine/bin/wineserver "'"$@"' > $HOME/ubuntu/usr/local/bin/wineserver
+chmod +x $HOME/ubuntu/usr/local/bin/wineserver
 wget https://raw.githubusercontent.com/Terwine9090/ubuntu-wine/main/menu
 rm -rf ubuntu/root/.bashrc
 mv menu ubuntu/root/.bashrc
