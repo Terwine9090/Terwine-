@@ -1,0 +1,10 @@
+echo "winedroid to stop 1 and enter"
+read -p "" nstop
+case $nstop in
+1)
+wineserver -k &> /dev/null 
+exit 
+*)
+bash /opt/wine-stop
+;;
+esac
