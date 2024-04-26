@@ -22,6 +22,7 @@ tar -xf wine-9.3.tar.gz
 mv wine-9.3 wine
 rm -rf wine-9.3.tar.gz
 wget https://raw.githubusercontent.com/Terwine9090/ubuntu-wine/main/menu
+wget https://raw.githubusercontent.com/Terwine9090/ubuntu-wine/main/wine-stop
 cd
 echo "creating command"
 echo '#!/bin/bash
