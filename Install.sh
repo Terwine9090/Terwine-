@@ -20,7 +20,9 @@ echo "download wine"
 wget https://github.com/Pi-Apps-Coders/files/releases/download/large-files/wine-9.3.tar.gz
 tar -xf wine-9.3.tar.gz
 mv wine-9.3 wine
+rm -rf wine-9.3.tar.gz
 cd
+echo "creating command"
 echo '#!/bin/bash
 export WINEPREFIX=~/.wine64
 box64 '"/opt/wine/bin/wine "'"$@"' > $HOME/ubuntu/usr/local/bin/wine
@@ -29,6 +31,9 @@ echo '#!/bin/bash
 export WINEPREFIX=~/.wine64
 box64 '"/opt/wine/bin/wineserver "'"$@"' > $HOME/ubuntu/usr/local/bin/wineserver
 chmod +x $HOME/ubuntu/usr/local/bin/wineserver
+echo "fix audio"
+bash Proot.sh apt update
+bash Proot.sh apt install pulseaudio -y
 wget https://raw.githubusercontent.com/Terwine9090/ubuntu-wine/main/menu
 rm -rf ubuntu/root/.bashrc
 mv menu ubuntu/root/.bashrc
