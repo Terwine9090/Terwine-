@@ -10,24 +10,34 @@ clear
 echo "winedroid is start"
 echo "[1]box64 wine64 start"
 echo "[2]terminal mode"                                                   
-echo "[3] install dxvk"
-
+echo "[3] change resolution"
+echo "[4] change core"
 read -p ":" select
-if (( $select == "1" ));
-        then
-           wine explorer /desktop=shell,1280x720 explorer
-            source ~/.bashrc
-        elif (( $select == "2" ));
-        then
-            echo 
-        elif (( $select == "3" ));
-        then
-           wine wineboot
-           wget https://raw.githubusercontent.com/Terwine9090/ubuntu-wine/main/Wine-installer.sh && bash Wine-installer.sh
-           exit
-        else
-            exit
-        fi
-
+case $select in
+1)
+ taskset -c $core wine /desktop=shell,$res explorer &>/dev/null &
+ bash /opt/wine-stop
+;;
+2)
+ echo "terminal mode"
+;;
+3)
+ rm -rf ~/.bashrc
+ echo "type resolution"
+ read -p ":" res
+ echo "export res=$res" >> ~/.bashrc
+ echo "export core=$core" >> ~/.bashrc
+ echo "bash /opt/menu" >> ~/.bashrc
+ source ~/.bashrc
+;;
+4)
+ rm -rf ~/.bashrc
+ echo "type -7"
+ read -p ":" core
+ echo "export res=$res" >> ~/.bashrc
+ echo "export core=$core" >> ~/.bashrc
+ echo "bash /opt/menu" >> ~/.bashrc
+ source ~/.bashrc
+;;
 
 
