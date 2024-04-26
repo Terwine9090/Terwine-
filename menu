@@ -6,12 +6,13 @@ export DISPLAY=:0
 export BOX64_PATH=~/wine64/bin/
 export BOX64_LD_LIBRARY_PATH=~/wine64/lib/i386-unix/:~/wine64/lib/wine/x86_64-unix/:/lib/i386-linux-gnu/:/lib/x86_64-linux-gnu:/lib/aarch64-linux-gnu/:/lib/arm-linux-gnueabihf/:/usr/lib/aarch64-linux-gnu/:/usr/lib/arm-linux-gnueabihf/:/usr/lib/i386-linux-gnu/:/usr/lib/x86_64-linux-gnu
 clear
-
+cd /root
 echo "winedroid is start"
 echo "[1]box64 wine64 start"
 echo "[2]terminal mode"                                                   
 echo "[3] change resolution"
 echo "[4] change core"
+echo "[5] change dxvk version"
 read -p ":" select
 case $select in
 1)
@@ -39,5 +40,5 @@ case $select in
  echo "bash /opt/menu" >> ~/.bashrc
  source ~/.bashrc
 ;;
-
+esac
 
