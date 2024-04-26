@@ -12,7 +12,6 @@ echo "[1]box64 wine64 start"
 echo "[2]terminal mode"                                                   
 echo "[3] change resolution"
 echo "[4] change core"
-echo "[5] change dxvk version"
 read -p ":" select
 case $select in
 1)
