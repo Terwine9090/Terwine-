@@ -21,6 +21,7 @@ wget https://github.com/Pi-Apps-Coders/files/releases/download/large-files/wine-
 tar -xf wine-9.3.tar.gz
 mv wine-9.3 wine
 rm -rf wine-9.3.tar.gz
+wget https://raw.githubusercontent.com/Terwine9090/ubuntu-wine/main/menu
 cd
 echo "creating command"
 echo '#!/bin/bash
@@ -34,9 +35,10 @@ chmod +x $HOME/ubuntu/usr/local/bin/wineserver
 echo "fix audio"
 bash Proot.sh apt update
 bash Proot.sh apt install pulseaudio -y
-wget https://raw.githubusercontent.com/Terwine9090/ubuntu-wine/main/menu
 rm -rf ubuntu/root/.bashrc
-mv menu ubuntu/root/.bashrc
+echo "export res=1280x720" >> ubuntu/root/.bashrc
+echo "export core=4-7" >> ubuntu/root/.bashrc
+echo "bash /opt/menu" >> ubuntu/root/.bashrc
 echo "termux-x11 &> /dev/null & bash windroid.sh" >> $PREFIX/bin/winedroid
 chmod +x $PREFIX/bin/winedroid
 rm -rf Proot.sh
