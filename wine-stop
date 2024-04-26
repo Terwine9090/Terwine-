@@ -4,6 +4,7 @@ case $nstop in
 1)
 wineserver -k &> /dev/null 
 exit 
+;;
 *)
 bash /opt/wine-stop
 ;;
