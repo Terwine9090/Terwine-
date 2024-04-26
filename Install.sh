@@ -39,6 +39,7 @@ bash Proot.sh apt install pulseaudio -y
 rm -rf ubuntu/root/.bashrc
 echo "export res=1280x720" >> ubuntu/root/.bashrc
 echo "export core=4-7" >> ubuntu/root/.bashrc
+echo "export DISPLAY=:0" >> ubuntu/root/.bashrc
 echo "bash /opt/menu" >> ubuntu/root/.bashrc
 echo "termux-x11 &> /dev/null & bash windroid.sh" >> $PREFIX/bin/winedroid
 chmod +x $PREFIX/bin/winedroid
