@@ -23,7 +23,6 @@ mv wine-9.3 wine
 rm -rf wine-9.3.tar.gz
 wget https://raw.githubusercontent.com/Terwine9090/ubuntu-wine/main/menu
 wget https://raw.githubusercontent.com/Terwine9090/ubuntu-wine/main/wine-stop
-wget 
 cd
 echo "creating command"
 echo '#!/bin/bash
@@ -43,7 +42,11 @@ echo "export core=4-7" >> ubuntu/root/.bashrc
 echo "bash /opt/menu" >> ubuntu/root/.bashrc
 echo "termux-x11 &> /dev/null & bash windroid.sh" >> $PREFIX/bin/winedroid
 chmod +x $PREFIX/bin/winedroid
-
+cd 
+termux-x11 &> /dev/null &
+cd $HOME/ubuntu/root
+wget https://raw.githubusercontent.com/Terwine9090/ubuntu-wine/main/wine-util
+bash Proot.sh bash wine-util 
 rm -rf Proot.sh
 wget https://raw.githubusercontent.com/Terwine9090/ubuntu-wine/main/windroid.sh
 echo "pulseaudio --start --exit-idle-time=-1
