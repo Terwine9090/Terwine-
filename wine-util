@@ -9,8 +9,13 @@ apt install xz-utils -y
 tar -xvf wine-mono-9.0.0-x86.tar.xz -C /opt/wine/share/wine/mono
 tar -xvf wine-gecko-2.47-x86_64.tar.xz -C /opt/wine/share/wine/gecko
 wine wineboot
-wget https://github.com/doitsujin/dxvk/releases/download/v2.3.1/dxvk-2.3.1.tar.gz 
+echo "select best performance"
+echo
+echo "[1]Snapdragon users"
+echo "[2]other users"
+read -p ":" pro
+case $pro in
+1)
+wget https://github.com/doitsujin/dxvk/releases/download/v2.3.1/dxvk-2.3.1.tar.gz
 tar -xvf dxvk-2.3.1.tar.gz
 cd dxvk-2.3.1
-cp x32/* ~/.wine64/drive_c/windows/system32
-cp x64/* ~/.wine64/drive_c/windows/syswow64
