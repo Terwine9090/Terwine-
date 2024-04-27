@@ -19,3 +19,16 @@ case $pro in
 wget https://github.com/doitsujin/dxvk/releases/download/v2.3.1/dxvk-2.3.1.tar.gz
 tar -xvf dxvk-2.3.1.tar.gz
 cd dxvk-2.3.1
+cp x32/* ~/.wine64/drive_c/windows/system32
+cp x64/* ~/.wine64/drive_c/windows/syswow64
+cd
+;;
+2)
+wget
+https://github.com/Sporif/dxvk-async/releases/download/2.0/dxvk-async-2.0.tar.gz
+cd dxvk-async-2.0
+cp x32/* ~/.wine64/drive_c/windows/system32
+cp x64/* ~/.wine64/drive_c/windows/syswow64
+cd
+;;
+esac
