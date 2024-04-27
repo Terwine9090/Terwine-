@@ -1,9 +1,13 @@
 export DISPLAY=:0
 cd /opt
 mkdir -p /opt/wine/share/wine/mono
+mkdir -p /opt/wine/share/wine/gecko
+echo "install mono and gecko"
 wget https://dl.winehq.org/wine/wine-mono/9.0.0/wine-mono-9.0.0-x86.tar.xz
+wget https://dl.winehq.org/wine/wine-gecko/2.47.4/wine-gecko-2.47.4-x86_64.tar.xz
 apt install xz-utils -y
 tar -xvf wine-mono-9.0.0-x86.tar.xz -C /opt/wine/share/wine/mono
+tar -xvf wine-gecko-2.47-x86_64.tar.xz -C /opt/wine/share/wine/gecko
 wine wineboot
 wget https://github.com/doitsujin/dxvk/releases/download/v2.3.1/dxvk-2.3.1.tar.gz 
 tar -xvf dxvk-2.3.1.tar.gz
